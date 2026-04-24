@@ -18,7 +18,7 @@ class ImageUploader {
     int imageSize = 256,
   }) async {
     if (kIsWeb) {
-      var result = await FilePicker.platform.pickFiles(
+      var result = await FilePicker.pickFiles(
         type: FileType.custom,
         allowedExtensions: ['jpg', 'png'],
       );
